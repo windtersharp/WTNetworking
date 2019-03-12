@@ -1,0 +1,6 @@
+framework module WTNetworking {
+  umbrella header "WTNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}
