@@ -1,17 +1,28 @@
 //
-//  WTTest.m
+//  WTNetworking.m
 //  WTNetworking_Example
 //
-//  Created by windtersharp on 2019/3/12.
+//  Created by windtersharp on 2019/3/15.
 //  Copyright © 2019 windtersharp. All rights reserved.
 //
 
+#import "WTNetworking.h"
+#import "AFNetworking.h"
 #import "WTTest.h"
 
-@implementation WTTest
+@interface WTNetworking()
+
+@property (nonatomic, strong) AFHTTPSessionManager *HTTPSessionManager;  // AFNetworking 和 服务器交互
+
+@end
+
+
+
+@implementation WTNetworking
 
 - (void)printNetwork {
     NSLog(@"network: %@",self.HTTPSessionManager.description);
+    WTOPENSSL_interface();
 }
 
 - (AFHTTPSessionManager *)HTTPSessionManager {

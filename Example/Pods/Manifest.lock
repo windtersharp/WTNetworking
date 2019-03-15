@@ -14,13 +14,20 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - WTNetworking (0.1.0):
+  - WTFoundation (0.0.1)
+  - WTNetworking (0.0.1):
     - AFNetworking
+    - WTFoundation
+    - WTOpenSSL (~> 1.0.0)
+  - WTOpenSSL (1.0.0)
 
 DEPENDENCIES:
   - WTNetworking (from `../`)
 
 SPEC REPOS:
+  https://git.dev.tencent.com/windtersharp/WTSpecs.git:
+    - WTFoundation
+    - WTOpenSSL
   https://github.com/cocoapods/specs.git:
     - AFNetworking
 
@@ -30,8 +37,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  WTNetworking: 8291a008391f5c89ed8960946ba395c67c46e16d
+  WTFoundation: ed4652f102f32fcb3ce89352e85d49c215b51f36
+  WTNetworking: 7d127a6eb5197476108e18b845a46b44b2b9e7c0
+  WTOpenSSL: 0039f4b6394437f0b6cb06865dfba73ea58f3b3d
 
-PODFILE CHECKSUM: 1637b3175cf17bb86bed79edadd73f2b2aed5437
+PODFILE CHECKSUM: fd760f21b4fb2a3daa3cfc2e35fe86e05b305e95
 
 COCOAPODS: 1.5.3

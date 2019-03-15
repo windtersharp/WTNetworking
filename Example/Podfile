@@ -1,9 +1,15 @@
-use_frameworks!
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://git.dev.tencent.com/windtersharp/WTSpecs.git'
+
+#use_frameworks!
 
 platform :ios, '8.0'
 
 target 'WTNetworking_Example' do
   pod 'WTNetworking', :path => '../'
+  # pod   'AFNetworking'
+  # pod   'WTFoundation'
 
   target 'WTNetworking_Tests' do
     inherit! :search_paths

@@ -1,6 +1,6 @@
 {
   "name": "WTNetworking",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "summary": "WTNetworking",
   "description": "Add long description of the WTNetworking",
   "homepage": "https://github.com/windtersharp/WTNetworking",
@@ -13,14 +13,14 @@
   },
   "source": {
     "git": "https://github.com/windtersharp/WTNetworking.git",
-    "tag": "0.1.0"
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "8.0"
   },
   "requires_arc": true,
-  "source_files": "WTNetworking/Classes/**/*.{h,m}",
-  "public_header_files": "Pod/Classes/**/*.h",
+  "source_files": "WTNetworking/Classes/*.{h,m}",
+  "public_header_files": "WTNetworking/Classes/*.h",
   "frameworks": [
     "Foundation",
     "UIKit"
@@ -28,6 +28,12 @@
   "dependencies": {
     "AFNetworking": [
 
+    ],
+    "WTFoundation": [
+
+    ],
+    "WTOpenSSL": [
+      "~> 1.0.0"
     ]
   }
 }

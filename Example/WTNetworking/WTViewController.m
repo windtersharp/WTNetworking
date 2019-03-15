@@ -7,6 +7,8 @@
 //
 
 #import "WTViewController.h"
+#import <WTTest.h>
+
 
 @interface WTViewController ()
 
@@ -17,6 +19,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    WTOPENSSL_interface();
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

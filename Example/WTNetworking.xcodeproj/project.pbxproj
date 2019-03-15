@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		467B62B9825A5B60127506E2 /* Pods_WTNetworking_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A842008EF802201820EDA4D6 /* Pods_WTNetworking_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,7 +22,9 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		E7BF99C64649B6DA98EA56A6 /* Pods_WTNetworking_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0689B1083C2337A925BD2310 /* Pods_WTNetworking_Example.framework */; };
+		8BD2E22A223B3D2500BFD531 /* WTNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD2E228223B3D2500BFD531 /* WTNetworking.m */; };
+		9A4878021285B465EAA04623 /* libPods-WTNetworking_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D414987300E9938501DBE1 /* libPods-WTNetworking_Tests.a */; };
+		FA40EBEEFAAC631A877D5DD2 /* libPods-WTNetworking_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2068F28A3FB2D3A00248FAC6 /* libPods-WTNetworking_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +39,9 @@
 
 /* Begin PBXFileReference section */
 		0648839829E60292A2587F4B /* Pods-WTNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTNetworking_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTNetworking_Tests/Pods-WTNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		0689B1083C2337A925BD2310 /* Pods_WTNetworking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTNetworking_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CB62B7EE6DB34DBA8088152 /* Pods-WTNetworking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTNetworking_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTNetworking_Example/Pods-WTNetworking_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4D01F511E04742AFC1A56369 /* WTNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WTNetworking.podspec; path = ../WTNetworking.podspec; sourceTree = "<group>"; };
+		2068F28A3FB2D3A00248FAC6 /* libPods-WTNetworking_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WTNetworking_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D01F511E04742AFC1A56369 /* WTNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WTNetworking.podspec; path = ../WTNetworking.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5425AA05BC751748B23C9EE5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* WTNetworking_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTNetworking_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,9 +65,11 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		748FB98D6076A9744FCF6558 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A842008EF802201820EDA4D6 /* Pods_WTNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTNetworking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD2E228223B3D2500BFD531 /* WTNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WTNetworking.m; path = ../../WTNetworking/Classes/WTNetworking.m; sourceTree = "<group>"; };
+		8BD2E229223B3D2500BFD531 /* WTNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WTNetworking.h; path = ../../WTNetworking/Classes/WTNetworking.h; sourceTree = "<group>"; };
 		C926B73FC82A488643626E6D /* Pods-WTNetworking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTNetworking_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTNetworking_Tests/Pods-WTNetworking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD29D189751836153CA41223 /* Pods-WTNetworking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTNetworking_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTNetworking_Example/Pods-WTNetworking_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F5D414987300E9938501DBE1 /* libPods-WTNetworking_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WTNetworking_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +80,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				E7BF99C64649B6DA98EA56A6 /* Pods_WTNetworking_Example.framework in Frameworks */,
+				FA40EBEEFAAC631A877D5DD2 /* libPods-WTNetworking_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +91,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				467B62B9825A5B60127506E2 /* Pods_WTNetworking_Tests.framework in Frameworks */,
+				9A4878021285B465EAA04623 /* libPods-WTNetworking_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +126,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				0689B1083C2337A925BD2310 /* Pods_WTNetworking_Example.framework */,
-				A842008EF802201820EDA4D6 /* Pods_WTNetworking_Tests.framework */,
+				2068F28A3FB2D3A00248FAC6 /* libPods-WTNetworking_Example.a */,
+				F5D414987300E9938501DBE1 /* libPods-WTNetworking_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,6 +135,8 @@
 		6003F593195388D20070C39A /* Example for WTNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				8BD2E229223B3D2500BFD531 /* WTNetworking.h */,
+				8BD2E228223B3D2500BFD531 /* WTNetworking.m */,
 				6003F59C195388D20070C39A /* WTAppDelegate.h */,
 				6003F59D195388D20070C39A /* WTAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -207,7 +212,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				61E07E11E69D88A8E7F7EE5D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -316,28 +320,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		61E07E11E69D88A8E7F7EE5D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WTNetworking_Example/Pods-WTNetworking_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/WTNetworking/WTNetworking.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WTNetworking.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTNetworking_Example/Pods-WTNetworking_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A7AE012F3CB96F3953770833 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD2E22A223B3D2500BFD531 /* WTNetworking.m in Sources */,
 				6003F59E195388D20070C39A /* WTAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* WTViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,

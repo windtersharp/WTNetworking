@@ -10,7 +10,3 @@
 #endif
 #endif
 
-
-FOUNDATION_EXPORT double WTNetworkingVersionNumber;
-FOUNDATION_EXPORT const unsigned char WTNetworkingVersionString[];
-

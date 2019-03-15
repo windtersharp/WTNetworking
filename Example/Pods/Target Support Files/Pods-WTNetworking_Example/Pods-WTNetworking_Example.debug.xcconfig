@@ -1,8 +1,8 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/WTNetworking"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/WTNetworking/WTNetworking.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "AFNetworking" -framework "WTNetworking"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/WTFoundation" "${PODS_ROOT}/Headers/Public/WTNetworking" "${PODS_ROOT}/Headers/Public/WTOpenSSL"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/WTFoundation" "${PODS_CONFIGURATION_BUILD_DIR}/WTNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/WTOpenSSL"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/WTFoundation" -isystem "${PODS_ROOT}/Headers/Public/WTNetworking" -isystem "${PODS_ROOT}/Headers/Public/WTOpenSSL"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"WTFoundation" -l"WTNetworking" -l"WTOpenSSL" -framework "CoreGraphics" -framework "Foundation" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
