@@ -7,8 +7,8 @@
 //
 
 #import "WTViewController.h"
-#import <WTTest.h>
-
+//#import <WTTest.h>
+#import "WTNetworking.h"
 
 @interface WTViewController ()
 
@@ -20,7 +20,10 @@
 {
     [super viewDidLoad];
     
-    WTOPENSSL_interface();
+    WTNetworking *networking = [[WTNetworking alloc] init];
+    [networking printNetwork];
+    
+//    WTOPENSSL_interface();
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

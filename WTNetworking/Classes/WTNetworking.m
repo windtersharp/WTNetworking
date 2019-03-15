@@ -8,7 +8,8 @@
 
 #import "WTNetworking.h"
 #import "AFNetworking.h"
-#import "WTTest.h"
+//#import "WTTest.h"
+
 
 @interface WTNetworking()
 
@@ -21,8 +22,17 @@
 @implementation WTNetworking
 
 - (void)printNetwork {
+    NSLog(@"%s", __func__);
+    
     NSLog(@"network: %@",self.HTTPSessionManager.description);
-    WTOPENSSL_interface();
+//    WTOPENSSL_interface();
+    NSDictionary *parameters = @{@"appPlatform" : @"iOS",
+                                 @"app_version" : @"2.0.1"
+                                 };
+    
+    NSString *string = AFQueryStringFromParameters(parameters);
+    NSLog(@"AFQueryStringFromParameters: %@",string);
+
 }
 
 - (AFHTTPSessionManager *)HTTPSessionManager {
