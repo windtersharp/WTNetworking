@@ -8,7 +8,7 @@
 
 #import "WTNetworking.h"
 #import "AFNetworking.h"
-//#import "WTTest.h"
+#import "WTTest.h"
 
 
 @interface WTNetworking()
@@ -25,7 +25,7 @@
     NSLog(@"%s", __func__);
     
     NSLog(@"network: %@",self.HTTPSessionManager.description);
-//    WTOPENSSL_interface();
+    WTOPENSSL_interface();
     NSDictionary *parameters = @{@"appPlatform" : @"iOS",
                                  @"app_version" : @"2.0.1"
                                  };

@@ -31,8 +31,8 @@ Pod::Spec.new do |s|
   s.public_header_files = 'WTNetworking/Classes/*.h'
   s.frameworks = 'Foundation', 'UIKit'
   s.dependency 'AFNetworking'
-  # s.dependency 'WTFoundation' 
-  # s.dependency 'WTOpenSSL'
+  s.dependency 'WTFoundation' 
+  s.dependency 'WTOpenSSL'
   # s.xcconfig = {'OTHER_LDFLAGS' => '-OBJC'}
 
 
